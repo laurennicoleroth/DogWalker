@@ -13,15 +13,15 @@
 		96FCCDC120E52E3D00FA0E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96FCCDC020E52E3D00FA0E69 /* Assets.xcassets */; };
 		96FCCDC420E52E3D00FA0E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96FCCDC220E52E3D00FA0E69 /* LaunchScreen.storyboard */; };
 		96FCCDCF20E52E3D00FA0E69 /* DogWalkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDCE20E52E3D00FA0E69 /* DogWalkerTests.swift */; };
-		96FCCDDB20E5304D00FA0E69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDDA20E5304D00FA0E69 /* HomeViewController.swift */; };
-		96FCCDE020E5874000FA0E69 /* NewWalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDDF20E5874000FA0E69 /* NewWalkViewController.swift */; };
-		96FCCDE220E5879200FA0E69 /* WalkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDE120E5879200FA0E69 /* WalkDetailsViewController.swift */; };
 		96FCCDE420E587F100FA0E69 /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDE320E587F100FA0E69 /* StoryboardSupport.swift */; };
 		96FCCDE620E5880F00FA0E69 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDE520E5880F00FA0E69 /* UnitExtensions.swift */; };
 		96FCCDE820E5883600FA0E69 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDE720E5883600FA0E69 /* FormatDisplay.swift */; };
 		96FCCDEA20E5885200FA0E69 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDE920E5885200FA0E69 /* LocationManager.swift */; };
 		96FCCDEC20E5887B00FA0E69 /* MulticolorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDEB20E5887B00FA0E69 /* MulticolorPolyline.swift */; };
 		96FCCDEE20E5A12C00FA0E69 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDED20E5A12C00FA0E69 /* CoreDataStack.swift */; };
+		96FCCDF020E5B40B00FA0E69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDEF20E5B40B00FA0E69 /* HomeViewController.swift */; };
+		96FCCDF320E5B44700FA0E69 /* NewWalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDF220E5B44700FA0E69 /* NewWalkViewController.swift */; };
+		96FCCDF520E5B46D00FA0E69 /* WalkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDF420E5B46C00FA0E69 /* WalkDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,15 +45,15 @@
 		96FCCDCA20E52E3D00FA0E69 /* DogWalkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogWalkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FCCDCE20E52E3D00FA0E69 /* DogWalkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogWalkerTests.swift; sourceTree = "<group>"; };
 		96FCCDD020E52E3D00FA0E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96FCCDDA20E5304D00FA0E69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		96FCCDDF20E5874000FA0E69 /* NewWalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalkViewController.swift; sourceTree = "<group>"; };
-		96FCCDE120E5879200FA0E69 /* WalkDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkDetailsViewController.swift; sourceTree = "<group>"; };
 		96FCCDE320E587F100FA0E69 /* StoryboardSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
 		96FCCDE520E5880F00FA0E69 /* UnitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
 		96FCCDE720E5883600FA0E69 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
 		96FCCDE920E5885200FA0E69 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		96FCCDEB20E5887B00FA0E69 /* MulticolorPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticolorPolyline.swift; sourceTree = "<group>"; };
 		96FCCDED20E5A12C00FA0E69 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		96FCCDEF20E5B40B00FA0E69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		96FCCDF220E5B44700FA0E69 /* NewWalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalkViewController.swift; sourceTree = "<group>"; };
+		96FCCDF420E5B46C00FA0E69 /* WalkDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 				96FCCDB620E52E3B00FA0E69 /* AppDelegate.swift */,
 				96FCCDC520E52E3D00FA0E69 /* Info.plist */,
 				96FCCDD920E52FEF00FA0E69 /* Storyboard and Assets */,
-				96FCCDDC20E5305B00FA0E69 /* View Controllers */,
+				96FCCDF120E5B41D00FA0E69 /* View Controllers */,
 				96FCCDDD20E530C100FA0E69 /* CoreData */,
 				96FCCDDE20E5850600FA0E69 /* Supporting Files */,
 			);
@@ -124,17 +124,6 @@
 			path = "Storyboard and Assets";
 			sourceTree = "<group>";
 		};
-		96FCCDDC20E5305B00FA0E69 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				96FCCDDA20E5304D00FA0E69 /* HomeViewController.swift */,
-				96FCCDDF20E5874000FA0E69 /* NewWalkViewController.swift */,
-				96FCCDE120E5879200FA0E69 /* WalkDetailsViewController.swift */,
-			);
-			name = "View Controllers";
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		96FCCDDD20E530C100FA0E69 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +143,17 @@
 				96FCCDEB20E5887B00FA0E69 /* MulticolorPolyline.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96FCCDF120E5B41D00FA0E69 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96FCCDEF20E5B40B00FA0E69 /* HomeViewController.swift */,
+				96FCCDF220E5B44700FA0E69 /* NewWalkViewController.swift */,
+				96FCCDF420E5B46C00FA0E69 /* WalkDetailsViewController.swift */,
+			);
+			name = "View Controllers";
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,16 +257,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FCCDF320E5B44700FA0E69 /* NewWalkViewController.swift in Sources */,
 				96FCCDBF20E52E3B00FA0E69 /* DogWalker.xcdatamodeld in Sources */,
 				96FCCDEC20E5887B00FA0E69 /* MulticolorPolyline.swift in Sources */,
 				96FCCDB720E52E3B00FA0E69 /* AppDelegate.swift in Sources */,
 				96FCCDE420E587F100FA0E69 /* StoryboardSupport.swift in Sources */,
-				96FCCDE020E5874000FA0E69 /* NewWalkViewController.swift in Sources */,
-				96FCCDDB20E5304D00FA0E69 /* HomeViewController.swift in Sources */,
 				96FCCDEE20E5A12C00FA0E69 /* CoreDataStack.swift in Sources */,
+				96FCCDF020E5B40B00FA0E69 /* HomeViewController.swift in Sources */,
+				96FCCDF520E5B46D00FA0E69 /* WalkDetailsViewController.swift in Sources */,
 				96FCCDE820E5883600FA0E69 /* FormatDisplay.swift in Sources */,
 				96FCCDE620E5880F00FA0E69 /* UnitExtensions.swift in Sources */,
-				96FCCDE220E5879200FA0E69 /* WalkDetailsViewController.swift in Sources */,
 				96FCCDEA20E5885200FA0E69 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
