@@ -19,23 +19,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Walker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEA-u1-R0a">
-                                <rect key="frame" x="0.0" y="30" width="375" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DogWalker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEA-u1-R0a">
+                                <rect key="frame" x="0.0" y="30" width="375" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="WhC-6i-hkD"/>
+                                    <constraint firstAttribute="height" constant="55" id="WhC-6i-hkD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HC-GV459_Walker_G_20171005154031" translatesAutoresizingMaskIntoConstraints="NO" id="bOo-Sc-8Tr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="21-512" translatesAutoresizingMaskIntoConstraints="NO" id="bOo-Sc-8Tr">
                                 <rect key="frame" x="0.0" y="68" width="375" height="600"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.086274509799999996" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="bOo-Sc-8Tr" secondAttribute="bottom" constant="-1" id="7OJ-rD-BEy"/>
-                            <constraint firstItem="bOo-Sc-8Tr" firstAttribute="top" secondItem="sEA-u1-R0a" secondAttribute="bottom" constant="17" id="Fr9-Gu-k6b"/>
+                            <constraint firstItem="bOo-Sc-8Tr" firstAttribute="top" secondItem="sEA-u1-R0a" secondAttribute="bottom" constant="-17" id="Fr9-Gu-k6b"/>
                             <constraint firstAttribute="trailing" secondItem="sEA-u1-R0a" secondAttribute="trailing" id="Hnf-ZT-CDX"/>
                             <constraint firstItem="sEA-u1-R0a" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="WYr-yF-v0P"/>
                             <constraint firstItem="sEA-u1-R0a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="eOT-cq-74C"/>
@@ -51,6 +51,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HC-GV459_Walker_G_20171005154031" width="382" height="354"/>
+        <image name="21-512" width="256" height="256"/>
     </resources>
 </document>
