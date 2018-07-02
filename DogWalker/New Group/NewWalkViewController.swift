@@ -68,6 +68,7 @@ class NewWalkViewController: UIViewController {
     startButton.isHidden = true
     stopButton.isHidden = false
     mapView.isHidden = false
+    mapView.clear()
 //    mapView.removeOverlays(mapView.overlays)
     
     seconds = 0

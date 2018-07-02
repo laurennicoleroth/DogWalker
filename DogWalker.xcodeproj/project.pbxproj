@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		28457E38D85282765378D451 /* Pods_DogWalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4729EF738D54104A02CBC0 /* Pods_DogWalker.framework */; };
 		65E9137DF115EB7853248301 /* Pods_DogWalkerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246AF588210B0AC81DE3DA47 /* Pods_DogWalkerTests.framework */; };
+		966BA4B720EAB6CD00FE6698 /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966BA4B620EAB6CD00FE6698 /* secrets.swift */; };
 		96FCCDB720E52E3B00FA0E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDB620E52E3B00FA0E69 /* AppDelegate.swift */; };
 		96FCCDBC20E52E3B00FA0E69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96FCCDBA20E52E3B00FA0E69 /* Main.storyboard */; };
 		96FCCDBF20E52E3B00FA0E69 /* DogWalker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96FCCDBD20E52E3B00FA0E69 /* DogWalker.xcdatamodeld */; };
@@ -41,6 +42,7 @@
 		298508874F5972319E06C864 /* Pods-DogWalkerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogWalkerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogWalkerTests/Pods-DogWalkerTests.release.xcconfig"; sourceTree = "<group>"; };
 		3EE3740F3EEC4A10BA71FE68 /* Pods-DogWalker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogWalker.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogWalker/Pods-DogWalker.release.xcconfig"; sourceTree = "<group>"; };
 		8987E2E43370DDE0320A8EE5 /* Pods-DogWalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogWalker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogWalker/Pods-DogWalker.debug.xcconfig"; sourceTree = "<group>"; };
+		966BA4B620EAB6CD00FE6698 /* secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = "<group>"; };
 		96FCCDB320E52E3B00FA0E69 /* DogWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FCCDB620E52E3B00FA0E69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96FCCDBB20E52E3B00FA0E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				96FCCDF120E5B41D00FA0E69 /* View Controllers */,
 				96FCCDDD20E530C100FA0E69 /* CoreData */,
 				96FCCDDE20E5850600FA0E69 /* Supporting Files */,
+				966BA4B620EAB6CD00FE6698 /* secrets.swift */,
 			);
 			path = DogWalker;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				96FCCDEC20E5887B00FA0E69 /* MulticolorPolyline.swift in Sources */,
 				96FCCDB720E52E3B00FA0E69 /* AppDelegate.swift in Sources */,
 				96FCCDE420E587F100FA0E69 /* StoryboardSupport.swift in Sources */,
+				966BA4B720EAB6CD00FE6698 /* secrets.swift in Sources */,
 				96FCCDEE20E5A12C00FA0E69 /* CoreDataStack.swift in Sources */,
 				96FCCDF020E5B40B00FA0E69 /* HomeViewController.swift in Sources */,
 				96FCCDF520E5B46D00FA0E69 /* WalkDetailsViewController.swift in Sources */,
