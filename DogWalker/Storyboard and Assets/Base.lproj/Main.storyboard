@@ -85,6 +85,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="DogWalker" id="nxN-ZT-Jt9"/>
+                    <connections>
+                        <outlet property="mapView" destination="LJe-i0-bDw" id="bzi-t8-Kdb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

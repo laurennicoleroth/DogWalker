@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     UINavigationBar.appearance().tintColor = .gray
     UINavigationBar.appearance().barTintColor = .white
     let locationManager = LocationManager.shared
-    locationManager.requestWhenInUseAuthorization()
+    locationManager.requestAlwaysAuthorization()
     
     GMSServices.provideAPIKey(googleMapsAPIKey)
     return true
