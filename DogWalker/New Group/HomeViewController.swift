@@ -17,27 +17,43 @@ class HomeViewController: UIViewController {
   private var seconds = 0
   private var timer: Timer?
   private var distance = Measurement(value: 0, unit: UnitLength.meters)
-  private var locationList: [CLLocation] = []
+  private var locationList: [CLLocation] = [] {
+    didSet {
+      if let location = locationList.first {
+        let cameraPosition = GMSCameraPosition.camera(withLatitude: location.coordinate.latitude, longitude: location.coordinate.longitude, zoom: 15.0)
+        mapView.animate(to: cameraPosition)
+        showMarker(position: cameraPosition.target)
+      }
+    }
+  }
+  
+  let trackingPath: GMSMutablePath = GMSMutablePath()
+  let trackingPolyline: GMSPolyline = GMSPolyline()
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    startLocationUpdates()
+   
+    setupLocation()
+    setupMap()
   }
   
-  private func startLocationUpdates() {
+  private func setupLocation() {
     locationManager.delegate = self
     locationManager.activityType = .fitness
     locationManager.distanceFilter = 10
     locationManager.startUpdatingLocation()
   }
   
-  private func findUserOnMap(at location: CLLocationCoordinate2D) {
-    locationManager.requestLocation()
+  private func setupMap() {
     mapView.settings.myLocationButton = true
-    let cameraPosition = GMSCameraPosition.camera(withLatitude: location.latitude, longitude: location.longitude, zoom: 15.0)
-    mapView.animate(to: cameraPosition)
-    
+  }
+
+  private  func showMarker(position: CLLocationCoordinate2D){
+    let marker = GMSMarker()
+    marker.position = position
+    marker.title = "Current Location"
+    marker.snippet = "snippet"
+    marker.map = mapView
   }
 }
 
@@ -45,11 +61,9 @@ extension HomeViewController: CLLocationManagerDelegate {
   
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     
-    if let location = locations.first {
-      print("Found user's location: \(location)")
-      findUserOnMap(at: CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude))
-    }
-
+    let newLocationCoordinate = locations.last!.coordinate
+   
+ 
     for newLocation in locations {
 
       let howRecent = newLocation.timestamp.timeIntervalSinceNow
@@ -58,10 +72,19 @@ extension HomeViewController: CLLocationManagerDelegate {
       if let lastLocation = locationList.last {
         let delta = newLocation.distance(from: lastLocation)
         distance = distance + Measurement(value: delta, unit: UnitLength.meters)
+        
         let coordinates = [lastLocation.coordinate, newLocation.coordinate]
-        //        mapView.add(MKPolyline(coordinates: coordinates, count: 2))
-        //        let region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 500, 500)
-        //        mapView.setRegion(region, animated: true)
+        
+        let lastLocation2D = CLLocationCoordinate2D(latitude: lastLocation.coordinate.latitude, longitude: lastLocation.coordinate.longitude)
+        
+        self.mapView.animate(toLocation: lastLocation2D)
+        
+        trackingPath.add(locations.last!.coordinate)
+
+        mapView.clear()
+
+        trackingPolyline.path = trackingPath
+        trackingPolyline.map = mapView
       }
       
       locationList.append(newLocation)
