@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import MapKit
+import GoogleMaps
 
 class NewWalkViewController: UIViewController {
   
@@ -19,8 +20,7 @@ class NewWalkViewController: UIViewController {
   @IBOutlet weak var distanceLabel: UILabel!
   @IBOutlet weak var timeLabel: UILabel!
   @IBOutlet weak var paceLabel: UILabel!
-  @IBOutlet var mapContainerView: UIView!
-  @IBOutlet var mapView: MKMapView!
+  @IBOutlet var mapView: GMSMapView!
   
   
   private var walk : Walk?
@@ -67,8 +67,9 @@ class NewWalkViewController: UIViewController {
     dataStackView.isHidden = false
     startButton.isHidden = true
     stopButton.isHidden = false
-    mapContainerView.isHidden = false
-    mapView.removeOverlays(mapView.overlays)
+    mapView.isHidden = false
+    mapView.clear()
+//    mapView.removeOverlays(mapView.overlays)
     
     seconds = 0
     distance = Measurement(value: 0, unit: UnitLength.meters)
@@ -85,7 +86,7 @@ class NewWalkViewController: UIViewController {
     dataStackView.isHidden = true
     startButton.isHidden = false
     stopButton.isHidden = true
-    mapContainerView.isHidden = true
+    mapView.isHidden = true
     
     locationManager.stopUpdatingLocation()
   }
@@ -161,9 +162,9 @@ extension NewWalkViewController: CLLocationManagerDelegate {
         let delta = newLocation.distance(from: lastLocation)
         distance = distance + Measurement(value: delta, unit: UnitLength.meters)
         let coordinates = [lastLocation.coordinate, newLocation.coordinate]
-        mapView.add(MKPolyline(coordinates: coordinates, count: 2))
+//        mapView.add(MKPolyline(coordinates: coordinates, count: 2))
         let region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 500, 500)
-        mapView.setRegion(region, animated: true)
+//        mapView.setRegion(region, animated: true)
       }
       
       locationList.append(newLocation)
